@@ -6,7 +6,11 @@ using namespace std;
 int main()
 {
 	cout << "Welcome to MathFlare's early access neutralizations' calculator" << endl;
-	cout << "---------------------------------------------------------------------------------------------------------" << endl;
+	cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
+	cout << "!!!Important Advice!!!" << endl;
+	cout << "----------------------" << endl;
+	cout << "!Please notice that in chemistry you don't have to write the number 1, so wherever you see the number 1 in the answer, just ignore it and don't write it!" << endl;
+	cout << "========================================================================================================================" << endl;
 	while (true)
 	{
 		string X, Y;
