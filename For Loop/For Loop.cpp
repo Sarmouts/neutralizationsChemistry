@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -7,206 +8,114 @@ int main()
 	while (true)
 	{
 		string X, Y;
-		int n1, n2, n3, n4;
+		int x, y, z, v;
 		double HO;
-		cout << "Hn1Xn2 + Yn3OHn4" << endl; // X kai Y einai ta stoixeia kai ta n einai to noumero tous
-		cout << "Enter X" << endl;
+		cout << "HxXy + YzOHv" << endl; // X kai Y einai ta stoixeia kai ta n einai to noumero tous
+		cout << "Enter Element X (non-metals)" << endl;
 		cin >> X;
-		cout << "Enter n1" << endl;
-		cin >> n1;
-		cout << "Enter n2" << endl;
-		cin >> n2;
-		cout << "Enter Y" << endl;
+		cout << "Enter x" << endl;
+		cin >> x;
+		cout << "Enter y" << endl;
+		cin >> y;
+		cout << "Enter Enter Element Y (metals)" << endl;
 		cin >> Y;
-		cout << "Enter n3" << endl;
-		cin >> n3;
-		cout << "Enter n4" << endl;
-		cin >> n4;
-		if (n1 <= 0 || n2 <= 0 || n3 <= 0 || n4 <= 0)
+		cout << "Enter z" << endl;
+		cin >> z;
+		cout << "Enter v" << endl;
+		cin >> v;
+		if (x <= 0 || y <= 0 || z <= 0 || v <= 0)
 		{
 			cout << "Please enter a valid value" << endl;
 		}
-		else if (n1 > 3 || n2 > 3 || n3 > 3 || n4 > 3)
+		else if (x > 3 || y > 3 || z > 3 || v > 3)
 		{
 			cout << "Please enter a valid value" << endl;
 		}
 		else
 		{
-			if (n1 == n2 || n3 == n4 || n2 == n3)
+			if (x == y)
 			{
-				if (n1 == n2)
+				if (z == v)
 				{
-					if (n3 == n4)
+					if (x == v)
 					{
-						if (n1 == n4)
-						{
-
-							cout << "H" << X << " + " << Y << "OH" << " = " << "H2O + " << Y << X << endl;
-						}
-						else
-						{
-
-							cout << "H" << X << " + " << Y << "OH" << " = " << "H2O + " << Y << n1 << X << n4 << endl;
-						}
-					}
-					else if (n1 == n4)
-					{
-						HO = (1 + static_cast<double>(n4)) / 2;
-						cout << "H" << X << " + " << Y << n3 << "OH" << n4 << " = " << HO << "H2O + " << Y << X << endl;
+						cout << "H" << X << " + " << Y << "OH" << " --> " << "H2O + " << Y << X << endl;
 					}
 					else
 					{
-						HO = (1 + static_cast<double>(n4)) / 2;
-						cout << "H" << X << " + " << Y << n3 << "OH" << n4 << " = " << HO << "H2O + " << Y << n1 << X << n4 << endl;
+
+						cout << v << "H" << X << " + " << x << Y << "OH" << " --> " << "H2O + " << Y << x << X << v << endl;
 					}
 				}
-				else if (n3 == n4)
+				else if (x == v)
 				{
-					if (n1 == n2)
+					HO = v * x;
+					cout << "H" << X << " + " << Y << z << "OH" << v << " --> " << HO << "H2O + " << Y << X << endl;
+				}
+				else
+				{
+					HO = v * x;
+					cout << v << "H" << X << " + " << x << Y << z << "OH" << v << " --> " << HO << "H2O + " << Y << x << X << v << endl;
+				}
+			}
+			else if (z == v)
+			{
+				if (x == y)
+				{
+					if (x == v)
 					{
-						if (n1 == n4)
-						{
 
-							cout << "H" << X << " + " << Y << "OH" << " = " << "H2O + " << Y << X << endl;
-						}
-						else
-						{
-
-							cout << "H" << X << " + " << Y << "OH" << " = " << "H2O + " << Y << n1 << X << n4 << endl;
-						}
-					}
-					else if (n1 == n4)
-					{
-						HO = (static_cast<double>(n1) + 1) / 2;
-						cout << "H" << n1 << X << n2 << " + " << Y << "OH" << " = " << HO << "H2O + " << Y << X << endl;
+						cout << "H" << X << " + " << Y << "OH" << " --> " << "H2O + " << Y << X << endl;
 					}
 					else
 					{
-						HO = (static_cast<double>(n1) + 1) / 2;
-						cout << "H" << n1 << X << n2 << " + " << Y << "OH" << " = " << HO << "H2O + " << Y << n1 << X << n4 << endl;
+
+						cout << v << "H" << X << " + " << x << Y << "OH" << " --> " << "H2O + " << Y << x << X << v << endl;
 					}
 				}
-				else if (n1 == n4)
+				else if (x == v)
 				{
-					if (n1 == n2)
+					HO = x * v;
+					cout << "H" << x << X << y << " + " << Y << "OH" << " --> " << HO << "H2O + " << Y << X << endl;
+				}
+				else
+				{
+					HO = x * v;
+					cout << v << "H" << x << X << y << " + " << x << Y << "OH" << " --> " << HO << "H2O + " << Y << x << X << v << endl;
+				}
+			}
+			else if (x == v)
+			{
+				if (x == y)
+				{
+					if (z == v)
 					{
-						if (n3 == n4)
-						{
 
-							cout << "H" << X << " + " << Y << "OH" << " = " << "H2O + " << Y << X << endl;
-						}
-						else
-						{
-							HO = (1 + static_cast<double>(n4)) / 2;
-							cout << "H" << X << " + " << Y << n3 << "OH" << n4 << " = " << HO << "H2O + " << Y << X << endl;
-						}
-					}
-					else if (n3 == n4)
-					{
-						HO = (static_cast<double>(n1) + 1) / 2;
-						cout << "H" << n1 << X << n2 << " + " << Y << "OH" << " = " << HO << "H2O + " << Y << X << endl;
+						cout << "H" << X << " + " << Y << "OH" << " --> " << "H2O + " << Y << X << endl;
 					}
 					else
 					{
-						HO = (n1 + static_cast<double>(n4)) / 2;
-						cout << "H" << n1 << X << n2 << " + " << Y << n3 << "OH" << n4 << " = " << HO << "H2O + " << Y << X << endl;
+						HO = x * v;
+						cout << "H" << X << " + " << Y << z << "OH" << v << " --> " << HO << "H2O + " << Y << X << endl;
 					}
+				}
+				else if (z == v)
+				{
+					HO = x * v;
+					cout << "H" << x << X << y << " + " << Y << "OH" << " --> " << HO << "H2O + " << Y << X << endl;
+				}
+				else
+				{
+					HO = x * v;
+					cout << "H" << x << X << y << " + " << Y << z << "OH" << v << " --> " << HO << "H2O + " << Y << X << endl;
 				}
 			}
 			else
 			{
-				HO = (n1 + static_cast<double>(n4)) / 2;
-				cout << "H" << n1 << X << n2 << " + " << Y << n3 << "OH" << n4 << " = " << HO << "H2O + " << Y << n1 << X << n4 << endl;
+				HO = v * x;
+				cout << v << "H" << x << X << y << " + " << x << Y << z << "OH" << v << " --> " << HO << "H2O + " << Y << x << X << v << endl;
 			}
 		}
 	}
+	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*for (int i = 0; i <= 10; i++)
-		{
-
-			for (int a = 0;  a <= 10; a++)
-			{
-				cout << i;
-
-
-
-			}
-
-
-			cout << endl;
-
-		}*/
-		/*float s, g, p;
-		cout << "Enter a number " << endl;
-		cin >> s;
-		cout << "Enter a number " << endl;
-		cin >> g;
-		p = s - g;
-		cout << "Their diafora is " << p << ">0" << endl << endl;
-		while (p > 0)
-		{
-			double  a, b, c;
-			cout << "Enter a number " << endl;
-			cin >> a;
-			c = 0;
-			cout << endl;
-			if (a > 100)
-			{
-				cout << "Enter a smaller number than 10 \n" << endl;
-			}
-			else if (a == 0)
-			{
-				cout << "Enter a bigger number than 0 \n" << endl;
-			}
-			else {
-				for (; a <= 100; a++)
-				{
-					for (int i = 1; i <= a; i++)
-					{
-						b = pow(a, a);
-						cout << a << "^" << a << "=" << b;
-						c++;
-						if (c == 1)
-						{
-							cout << endl;
-							c = 0;
-						}
-
-					}
-
-				}
-				cout << endl;
-			}
-
-		}*/
-
-
