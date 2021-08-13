@@ -81,7 +81,7 @@ int main()
 				else
 				{
 					HO = x * v;
-					cout << v << "H" << x << X << y << " + " << x << Y << "OH" << " --> " << HO << "H2O + " << Y << x << X << v << endl;
+					cout << v << "H" << x << X << y << " + " << x << Y << "OH" << " --> " << HO << "H2O + " << Y << x << X << v << endl
 				}
 			}
 			else if (x == v)
