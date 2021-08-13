@@ -16,7 +16,7 @@ int main()
 		string X, Y;
 		int x, y, z, v;
 		double HO;
-		cout << "HxXy + YzOHv" << endl; // X kai Y einai ta stoixeia kai ta n einai to noumero tous
+		cout << "HxXy + YzOHv" << endl; // X kai Y einai ta stoixeia kai ta x,y,z,v einai to noumero tous
 		cout << "Enter Element X (non-metals, if you have something like this CO3, please write it with this way (CO3) so that the answer will be clearer)" << endl;
 		cin >> X;
 		cout << "Enter x" << endl;
