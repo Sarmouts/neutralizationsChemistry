@@ -40,9 +40,14 @@ int main()
 			cout << "Please enter a valid value" << endl;
 			cout << "======================================================================================" << endl;
 		}
-		else if (x > 3 || y > 3 || z > 3 || v > 3)
+		else if (x > 3 || v > 3)
 		{
-			cout << "Please enter a valid value" << endl;
+			cout << "The value of x or v cannot be more than 3" << endl;
+			cout << "======================================================================================" << endl;
+		}
+		else if (y > 1 || z > 1)
+		{
+			cout << "The value of y or z cannot be more or less than 1" << endl;
 			cout << "======================================================================================" << endl;
 		}
 		else
