@@ -17,7 +17,7 @@ string replace(string str)
 int main()
 {
 	cout << "Welcome to MathFlare's early access neutralizations' calculator" << endl;
-	cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
+	cout << "---------------------------------------------------------------" << endl;
 	while (true)
 	{
 		string X, Y, answer;
@@ -52,54 +52,9 @@ int main()
 		}
 		else
 		{
-			if (x == y && z == v && x == v)
+			if (x == v)
 			{
-				cout << "H" << X << " + " << Y << "OH" << " --> " << "H2O + " << Y << X << endl;
-				cout << "======================================================================================" << endl;
-			}
-			else if (x == y && z == v)
-			{
-				answer = to_string(v) + "H" + X + " + " + to_string(x) + Y + "OH --> H2O + " + Y + to_string(x) + X + to_string(v);
-				cout << replace(answer) << endl;
-				//cout << v << "H" << X << " + " << x << Y << "OH --> H2O + " << Y << x << X << v << endl;
-				cout << "======================================================================================" << endl;
-			}
-			else if (x == y && x == v)
-			{
-				HO = v * x;
-				answer = "H" + X + " + " + Y + to_string(z) + "OH" + to_string(v) + " --> " + to_string(HO) + "H2O + " + Y + X;
-				cout << replace(answer) << endl;
-				//cout << "H" << X << " + " << Y << z << "OH" << v << " --> " << HO << "H2O + " << Y << X << endl;
-				cout << "======================================================================================" << endl;
-			}
-			else if (z == v && x == v)
-			{
-				HO = x * v;
-				answer = "H" + to_string(x) + X + to_string(y) + " + " + Y + "OH" + " --> " + to_string(HO) + "H2O + " + Y + X;
-				cout << replace(answer) << endl;
-				//cout << "H" << x << X << y << " + " << Y << "OH" << " --> " << HO << "H2O + " << Y << X << endl;
-				cout << "======================================================================================" << endl;
-			}
-			else if (x == y)
-			{
-				HO = v * x;
-				answer = to_string(v) + "H" + X + " + " + to_string(x) + Y + to_string(z) + "OH" + to_string(v) + " --> " + to_string(HO) + "H2O + " + Y + to_string(x) + X + to_string(v);
-				cout << replace(answer) << endl;
-				//cout << v << "H" << X << " + " << x << Y << z << "OH" << v << " --> " << HO << "H2O + " << Y << x << X << v << endl;
-				cout << "======================================================================================" << endl;
-			}
-			else if (z == v)
-			{
-				HO = x * v;
-				answer = to_string(v) + "H" + to_string(x) + X + to_string(y) + " + " + to_string(x) + Y + "OH --> " + to_string(HO) + "H2O + " + Y + to_string(x) + X + to_string(v);
-				cout << replace(answer) << endl;
-				//cout << v << "H" << x << X << y << " + " << x << Y << "OH" << " --> " << HO << "H2O + " << Y << x << X << v << endl;
-				cout << "======================================================================================" << endl;
-			}
-			else if (x == v)
-			{
-				HO = x * v;
-				answer = "H" + to_string(x) + X + to_string(y) + " + " + Y + to_string(z) + "OH" + to_string(v) + " --> " + to_string(HO) + "H2O + " + Y + X;
+				answer = "H" + to_string(x) + X + to_string(y) + " + " + Y + to_string(z) + "OH" + to_string(v) + " --> " + to_string(x) + "H2O + " + Y + X;
 				cout << replace(answer) << endl;
 				//cout << "H" << x << X << y << " + " << Y << z << "OH" << v << " --> " << HO << "H2O + " << Y << X << endl;
 				cout << "======================================================================================" << endl;
