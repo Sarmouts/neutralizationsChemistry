@@ -21,7 +21,7 @@ int main()
 	while (true)
 	{
 		string X, Y, answer;
-		int x, y, z, v, HO;
+		int x, v, HO;
 		cout << "HxX + YOHv" << endl; // X kai Y einai ta stoixeia kai ta x,y,z,v einai to noumero tous
 		cout << "Enter x" << endl;
 		cin >> x;
